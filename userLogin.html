@@ -1,0 +1,39 @@
+<html>
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="userLogin.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>Login</title>
+</head>
+<body>
+  <form id="login-form">
+    <div class="container">
+        <img src="images/Login-amico.png">
+
+        <div class="login">
+            <h3 class="title">User Login</h3>
+            <div class="text-input">
+              <i class="fa-solid fa-envelope"></i>
+                <input  type="email" id="email"   name="email" placeholder="email" required >
+            <br><br>
+            </div>
+            <div class="text-input">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" id="password" name="password" placeholder="Password"   pattern="(?=.\d)(?=.[a-z])(?=.*[A-Z]).{3,}"
+                title="Must contain at least one  number and one uppercase and lowercase letter, and at least 3 or more characters" required><br>
+                </div>  
+                <button  id="login-button" class="login-btn" >LOGIN</button>
+            <a href="#" class="forgot">Forgot Username/Password?</a>
+            <br>
+            <div class="create">
+                <a href="userSignUp.html"><p>New User ?<b> SignUp</b></p></a>
+            </div>
+        </div>
+    </div>
+    </form>
+    <script src="userLogin.js"></script>
+</body>

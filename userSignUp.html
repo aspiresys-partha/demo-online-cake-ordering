@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="userSignUp.css">
+    <title>Login</title>
+
+</head>
+
+<body>
+  <form  id="registration-form">
+    <div class="container">
+        <img src="images/Computer login.gif">
+        <div class="login">
+            <h3 class="title">Signup</h3>
+            <div class="text-input">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" id="name"  name="name" placeholder="Full Name"  required pattern="[A-Za-z]{3,}" title="Must contain at least 3  or more characters " >
+                </div>
+            <div class="text-input">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" id="email" name="email" placeholder="Email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Format:BusBooking@gmail.com" required>
+            </div>
+          <div class="text-input">
+            <i class="fa-solid fa-phone"></i>
+            <input type="number" id="mobileNumber"  name="mobileNumber" placeholder="Mobile Number" pattern="[0-9]{5}[0-9]{5}" title="Must contain 10 digit Number" required>
+          </div>
+          
+            <div class="text-input">
+              <i class="fa-solid fa-lock"></i>
+                <input type="password" id="password"  name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{3,}">
+            </div>
+            <div class="text-input">
+              <i class="fa-sharp fa-solid fa-lock"></i>
+              <input type="password" id="Confirmpassword" name="Confirmpassword" placeholder="Confirm Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{3,}"
+               required>
+          </div>
+              <button id="login-button" class="login-btn"  type="submit">Submit</button>
+              <br>
+            <div class="create">
+                <a routerLink="/login">Already a Member ?<b>Login</b></a>
+            </div>
+        </div>
+    </div>
+</form>
+<script src="userSignUp.js"></script>
+</body>
+</html>
